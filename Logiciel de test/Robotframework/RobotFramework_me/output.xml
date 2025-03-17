@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-04T16:57:56.085191" rpa="false" schemaversion="5">
+<suite id="s1" name="Test03 Avec Resource" source="c:\Users\Administrateur\Desktop\RobotFramework\tests\Test03_Avec_Resource.robot">
+<test id="s1-t1" name="Test Login failed" line="22">
+<kw name="Given I am on the homepage" owner="homepage_page">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-03-04T16:57:56.268001" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-03-04T16:57:56.270530" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Administrateur\\Desktop\\RobotFramework\\browser\\traces\\temp\\2d65ce9a-7d63-4d89-ae0c-437bc11845d0"}</msg>
+<msg time="2025-03-04T16:57:56.288754" level="INFO">Starting Browser process C:\Users\Administrateur\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 57030</msg>
+<msg time="2025-03-04T16:57:56.289035" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Administrateur\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '57030']</msg>
+<msg time="2025-03-04T16:57:57.089055" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Administrateur\\Desktop\\RobotFramework\\browser\\traces\\temp\\2d65ce9a-7d63-4d89-ae0c-437bc11845d0"}</msg>
+<msg time="2025-03-04T16:57:57.090046" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": true,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2025-03-04T16:57:57.108061" level="INFO">Successfully created context. </msg>
+<msg time="2025-03-04T16:57:57.108315" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<msg time="2025-03-04T16:57:58.732875" level="INFO">Successfully initialized new page object and opened url: http://www.decathlon.fr</msg>
+<arg>http://www.decathlon.fr</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="PASS" start="2025-03-04T16:57:56.267362" elapsed="2.465853"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-03-04T16:57:58.788596" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<arg>id=didomi-notice-agree-button</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:57:58.733487" elapsed="0.055335"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-03-04T16:57:58.789693" level="INFO">Clicks the element 'id=didomi-notice-agree-button'.</msg>
+<arg>id=didomi-notice-agree-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:57:58.789019" elapsed="0.171739"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-03-04T16:57:59.216600" level="INFO">States are: ['detached']</msg>
+<arg>id=didomi-popup</arg>
+<arg>contains</arg>
+<arg>detached</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:57:58.961161" elapsed="0.255841"/>
+</kw>
+<status status="PASS" start="2025-03-04T16:57:56.266468" elapsed="2.950802"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-03-04T16:57:59.351385" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<arg>css=[href="/account/dashboard"]</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:57:59.217904" elapsed="0.134047"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-03-04T16:57:59.352972" level="INFO">Clicks the element 'css=[href="/account/dashboard"]'.</msg>
+<arg>css=[href="/account/dashboard"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:57:59.352407" elapsed="0.373888"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-03-04T16:58:00.541531" level="INFO">States are: ['attached', 'visible', 'enabled', 'editable', 'defocused']</msg>
+<arg>id=input-email</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:57:59.726854" elapsed="0.814904"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-03-04T16:58:00.543052" level="INFO">Fills the text 'matt@gmail.com' in the given field.</msg>
+<arg>id=input-email</arg>
+<arg>matt@gmail.com</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:58:00.542348" elapsed="0.048703"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-03-04T16:58:00.628674" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<arg>id=lookup-btn</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:58:00.591501" elapsed="0.037402"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-03-04T16:58:00.630151" level="INFO">Clicks the element 'id=lookup-btn'.</msg>
+<arg>id=lookup-btn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:58:00.629493" elapsed="0.059188"/>
+</kw>
+<kw name="Get Element States" owner="Browser">
+<msg time="2025-03-04T16:58:00.727121" level="INFO">States are: ['attached', 'visible', 'enabled', 'defocused']</msg>
+<arg>id=content_page</arg>
+<arg>contains</arg>
+<arg>visible</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the active states from the element found by ``selector``.</doc>
+<status status="PASS" start="2025-03-04T16:58:00.689182" elapsed="0.038153"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-03-04T16:58:01.760852" level="INFO">Text: "Loading\nSe connecter\nEmail\nSUIVANT\n\nOu se connecter avec\n\nPas de compte ? Créez-en un en quelques clics !\n\nCréer un compte DECATHLON\nAvantages du compte Decathlon\nRetours toute l'année sur vos produits\nAchat rapide\nSuivi de vos commandes\nAccès à des offres exclusives\nAide\nConfidentialité\nFrançais\n\nCe site est protégé par reCAPTCHA. La Politique de confidentialité de Google \xa0s'applique ainsi que\xa0les Conditions d'utilisation"</msg>
+<msg time="2025-03-04T16:58:01.972383" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-03-04T16:58:01.972823" level="INFO">See also file:///C:/Users/Administrateur/Desktop/RobotFramework/playwright-log.txt for additional details.</msg>
+<msg time="2025-03-04T16:58:13.683200" level="FAIL">Text "Loading\nSe connecter\nEmail\nSUIVANT\n\nOu se connecter avec\n\nPas de compte ? Créez-en un en quelques clics !\n\nCréer un compte DECATHLON\nAvantages du compte Decathlon\nRetours toute l'année sur vos produits\nAchat rapide\nSuivi de vos commandes\nAccès à des offres exclusives\nAide\nConfidentialité\nFrançais\n\nCe site est protégé par reCAPTCHA. La Politique de confidentialité de Google \xa0s'applique ainsi que\xa0les Conditions d'utilisation" (str) should contain 'Renseignez le code reçu :' (str)</msg>
+<arg>id=content_page</arg>
+<arg>contains</arg>
+<arg>Renseignez le code reçu :</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="FAIL" start="2025-03-04T16:58:00.727794" elapsed="12.960594">Text "Loading\nSe connecter\nEmail\nSUIVANT\n\nOu se connecter avec\n\nPas de compte ? Créez-en un en quelques clics !\n\nCréer un compte DECATHLON\nAvantages du compte Decathlon\nRetours toute l'année sur vos produits\nAchat rapide\nSuivi de vos commandes\nAccès à des offres exclusives\nAide\nConfidentialité\nFrançais\n\nCe site est protégé par reCAPTCHA. La Politique de confidentialité de Google \xa0s'applique ainsi que\xa0les Conditions d'utilisation" (str) should contain 'Renseignez le code reçu :' (str)</status>
+</kw>
+<msg time="2025-03-04T16:58:13.695524" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-03-04T16:58:13.711360" level="INFO">Switching context to context=61d3b8eb-f8c3-470f-b7e5-9fbac50b2140 in CURRENT</msg>
+<msg time="2025-03-04T16:58:13.723331" level="INFO">Successfully changed active context: context=61d3b8eb-f8c3-470f-b7e5-9fbac50b2140</msg>
+<msg time="2025-03-04T16:58:13.755032" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2025-03-04T16:57:56.265561" elapsed="17.423761">Text "Loading\nSe connecter\nEmail\nSUIVANT\n\nOu se connecter avec\n\nPas de compte ? Créez-en un en quelques clics !\n\nCréer un compte DECATHLON\nAvantages du compte Decathlon\nRetours toute l'année sur vos produits\nAchat rapide\nSuivi de vos commandes\nAccès à des offres exclusives\nAide\nConfidentialité\nFrançais\n\nCe site est protégé par reCAPTCHA. La Politique de confidentialité de Google \xa0s'applique ainsi que\xa0les Conditions d'utilisation" (str) should contain 'Renseignez le code reçu :' (str)</status>
+</test>
+<status status="FAIL" start="2025-03-04T16:57:56.091843" elapsed="17.665046"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test03 Avec Resource" id="s1" pass="0" fail="1" skip="0">Test03 Avec Resource</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-04T16:57:56.268001" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>
