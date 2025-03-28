@@ -1,6 +1,7 @@
 ﻿import { Login , Product, Cart, Info, Final } from "./PageObject/SauceDemo"  
 
 describe("Cypress POM Test Suite", function() {
+    
     it("Login avec un id et un mot de passe valide", function() {
 
         const longinpage = new Login()
@@ -15,13 +16,14 @@ describe("Cypress POM Test Suite", function() {
         cy.log('Connexion KO')
         longinpage.id('locked_out_user')
         longinpage.password('secret_sauce')
-        longinpage.submit_KO()
+        longinpage.submit()
+        longinpage.check_OK(false)
 
         cy.log('Connexion OK => produit')
         longinpage.id('standard_user')
         longinpage.password('secret_sauce')
-        longinpage.submit_OK()
-        longinpage.check_OK()
+        longinpage.submit()
+        longinpage.check_OK(true)
 
         cy.log('Sélection produit => cart')
         productpage.sort()

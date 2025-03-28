@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-17T16:47:45.447794" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Appium 02 Debug Appli" source="c:\Users\Administrateur\Desktop\Appium\Tests\test_appium_02_debug_appli.robot">
+<test id="s1-t1" name="test debug appli" line="7">
+<kw name="open API Demo" owner="keywords_api_demo">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL_API}</arg>
+<arg>platformName=${PLATFORM_NAME_API}</arg>
+<arg>platformVersion=${PLATFORM_VERSION_API}</arg>
+<arg>deviceName=${DEVICE_NAME_API}</arg>
+<arg>appPackage=${APP_PACKAGE_API}</arg>
+<arg>appActivity=${APP_ACTIVITY_API}</arg>
+<arg>automationName=${AUTOMATION_NAME_API}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-17T16:47:45.641051" elapsed="6.601815"/>
+</kw>
+<status status="PASS" start="2025-03-17T16:47:45.640308" elapsed="6.602814"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:52.245036" level="INFO">Clicking element 'accessibility_id=Views'.</msg>
+<arg>accessibility_id=Views</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T16:47:52.243800" elapsed="2.383597"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>650</arg>
+<arg>500</arg>
+<arg>0</arg>
+<arg>-2000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-03-17T16:47:54.628336" elapsed="1.302652"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:55.932570" level="INFO">Clicking element 'accessibility_id=Seek Bar'.</msg>
+<arg>accessibility_id=Seek Bar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T16:47:55.931577" elapsed="2.513296"/>
+</kw>
+<kw name="Get Webelement" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:58.476760" level="INFO">criteria is io.appium.android.apis:id/seek</msg>
+<msg time="2025-03-17T16:47:58.477047" level="INFO">${seekbar} = &lt;appium.webdriver.webelement.WebElement (session="701fec15-e938-4192-8070-1f3dad1859e2", element="00000000-0000-0343-ffff-ffff00000036")&gt;</msg>
+<var>${seekbar}</var>
+<arg>id=io.appium.android.apis:id/seek</arg>
+<doc>Returns the first [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] object matching ``locator``.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.446233" elapsed="0.030909"/>
+</kw>
+<kw name="Get Element Location" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:58.504225" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="701fec15-e938-4192-8070-1f3dad1859e2", element="00000000-0000-0343-ffff-ffff00000036")&gt;' location: {'x': 0, 'y': 327} </msg>
+<msg time="2025-03-17T16:47:58.504444" level="INFO">${location} = {'x': 0, 'y': 327}</msg>
+<var>${location}</var>
+<arg>${seekbar}</arg>
+<doc>Get element location</doc>
+<status status="PASS" start="2025-03-17T16:47:58.478303" elapsed="0.026216"/>
+</kw>
+<kw name="Get Element Size" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:58.524239" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="701fec15-e938-4192-8070-1f3dad1859e2", element="00000000-0000-0343-ffff-ffff00000036")&gt;' size: {'height': 54, 'width': 1344} </msg>
+<msg time="2025-03-17T16:47:58.524469" level="INFO">${size} = {'height': 54, 'width': 1344}</msg>
+<var>${size}</var>
+<arg>${seekbar}</arg>
+<doc>Get element size</doc>
+<status status="PASS" start="2025-03-17T16:47:58.505176" elapsed="0.019374"/>
+</kw>
+<kw name="Get Element Attribute" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:58.541317" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="701fec15-e938-4192-8070-1f3dad1859e2", element="00000000-0000-0343-ffff-ffff00000036")&gt;' attribute 'enabled' value 'true' </msg>
+<msg time="2025-03-17T16:47:58.541756" level="INFO">${enabled} = true</msg>
+<var>${enabled}</var>
+<arg>${seekbar}</arg>
+<arg>enabled</arg>
+<doc>Get element attribute using given attribute: name, value,...</doc>
+<status status="PASS" start="2025-03-17T16:47:58.525121" elapsed="0.016731"/>
+</kw>
+<kw name="Get Element Attribute" owner="AppiumLibrary">
+<msg time="2025-03-17T16:47:58.560981" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="701fec15-e938-4192-8070-1f3dad1859e2", element="00000000-0000-0343-ffff-ffff00000036")&gt;' attribute 'clickable' value 'false' </msg>
+<msg time="2025-03-17T16:47:58.561199" level="INFO">${clickable} = false</msg>
+<var>${clickable}</var>
+<arg>${seekbar}</arg>
+<arg>clickable</arg>
+<doc>Get element attribute using given attribute: name, value,...</doc>
+<status status="PASS" start="2025-03-17T16:47:58.542413" elapsed="0.018869"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Position : X=${location["x"]}, Y=${location["y"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.561880" elapsed="0.001040"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Taille : Largeur=${size["width"]}, Hauteur=${size["height"]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.563225" elapsed="0.000975"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Est activé : ${enabled}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.564503" elapsed="0.000411"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Est cliquable : ${clickable}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.565274" elapsed="0.000426"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-03-17T16:47:58.566535" level="INFO">${start_x} = 0</msg>
+<var>${start_x}</var>
+<arg>${location["x"]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.566075" elapsed="0.000556"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-17T16:47:58.567347" level="INFO">${end_x} = 1182.72</msg>
+<var>${end_x}</var>
+<arg>${start_x} + ${size["width"]} * 0.88</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.566863" elapsed="0.000571"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-03-17T16:47:58.568345" level="INFO">${y} = 354.0</msg>
+<var>${y}</var>
+<arg>${location["y"]} + (${size["height"]} / 2)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.567673" elapsed="0.000775"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>${start_x}</arg>
+<arg>${y}</arg>
+<arg>${end_x}</arg>
+<arg>${y}</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-03-17T16:47:58.568726" elapsed="0.797079"/>
+</kw>
+<status status="PASS" start="2025-03-17T16:47:45.639490" elapsed="13.727175"/>
+</test>
+<status status="PASS" start="2025-03-17T16:47:45.450968" elapsed="13.917071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Appium 02 Debug Appli" id="s1" pass="1" fail="0" skip="0">Test Appium 02 Debug Appli</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-17T16:47:45.632450" level="WARN">Error in file 'c:\Users\Administrateur\Desktop\Appium\resources\keywords_api_demo.resource' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

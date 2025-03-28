@@ -30,8 +30,12 @@ class Login{ // Partie "Login"
     }
     
     //
-    check_OK() {
-        cy.url().should('be.equal', 'https://www.saucedemo.com/v1/inventory.html')
+    check_OK(OK = true) {
+        if (OK) {
+            cy.url().should('be.equal', 'https://www.saucedemo.com/v1/inventory.html')
+        } else {
+            cy.url().should('be.equal', 'https://www.saucedemo.com/v1/')
+        }
     }
     
 }
